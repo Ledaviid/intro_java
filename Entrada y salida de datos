@@ -1,0 +1,41 @@
+//librerias => son funciones predefinidas
+
+import java.util.Scanner; //Para capturar,guardar valores desde el teclado
+
+public class EntradaSalidaDatos { //inicia programa
+
+    public static void main(String[] args) {//inicia main
+        //ENTRADA declaracin de variables y captura de datos 
+        byte edificio;
+        int number1;
+        long numberhabitantes;
+        float call;
+        double saldo;
+        String nombre;
+        Scanner entradaDato = new Scanner(System.in); //instruccon para guardar cualquier variable
+        System.out.println("Captura numero corto entero:");
+        edificio = entradaDato.nextByte(); //Guarda un numero entero corto
+        System.out.println("Captura numero regular entero:");
+        number1 = entradaDato.nextInt(); //Guarda unnumero entero regular
+        System.out.println("Captura numero largo entero:");
+        numberhabitantes = entradaDato.nextLong();//Guarda un numero entero Largo
+
+        System.out.println("Captura el numero decimal float");
+        call = entradaDato.nextFloat();//guarda 
+        System.out.println("Captura numero decimaldoble presicion");
+        saldo = entradaDato.nextDouble();
+
+        System.out.println("Captura numero ");
+        nombre = entradaDato.next();//guarda nombre en cadena de caracteres
+//PROCESO
+        //SALIDA
+        //imprimir resultado final de datos
+        System.out.println("Numero entero corto es" + edificio);
+        System.out.println("Numero entero regular es" + number1);
+        System.out.println("Numero entero largo es" + numberhabitantes);
+        System.out.println("Numero entero float es" + call);
+        System.out.println("Numero entero doble es" + saldo);
+        System.out.println("Numero entero cadena es" + nombre);
+    } //termina main
+
+}//termina programa
