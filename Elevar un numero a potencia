@@ -1,0 +1,25 @@
+/*
+PROGRAMA 9 Numero "N^2"
+ capturado sobre teclado*/
+
+import java.util.Scanner; //libreria entrada y salida de datos
+import java.math.*;
+
+public class Potencia {
+    
+    public static void main(String[] args) { //inicia main
+        Scanner entradaDatos=new Scanner(System.in);
+       double numeroCapturado;
+        System.out.println("CAPTURA NUMERO PARA ELEVARLO A LA POTENCIA 3:");
+        numeroCapturado=entradaDatos.nextDouble(); //proceso elevar al cuadrado el numero
+        
+        double potencia=Math.pow(numeroCapturado,2); //funcion Math 
+        
+        //Entrada
+        //Proceso
+        
+        //Salida
+         System.out.println("cAPTURA NUMERO PARA ELEVARLO A LA POTENCIA 3:"+potencia);
+    }//termina main
+    
+}//termina programa
